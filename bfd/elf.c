@@ -6946,7 +6946,7 @@ rewrite_elf_program_header (bfd *ibfd, bfd *obfd)
 	      && (segment->p_filesz > 0 || segment->p_memsz == 0))
 	    /* xgettext:c-format */
 	    _bfd_error_handler
-	      (_("%pB: warning: empty loadable segment detected"
+	      (_("%pB: warning: Empty loadable segment detected"
 		 " at vaddr=%#" PRIx64 ", is this intentional?"),
 	       ibfd, (uint64_t) segment->p_vaddr);
 
